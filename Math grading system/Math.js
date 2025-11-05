@@ -22,3 +22,19 @@ form.addEventListener("submit", function(event){
 
     resultDiv.textContent = `Your grade is: ${grade}`;
 });
+const button = document.getElementById("my-button")
+button.addEventListener("click",doSth)
+
+function doSth(){
+    const overlay = document.createElement("div");
+    overlay.className = "fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center";
+
+    const box = document.createElement("div");
+    box.className = "bg-white p-6 rounded-lg shadow-lg text-xl text-center"
+    box.textContent="By Mulwa ★"
+
+    overlay.appendChild(box);
+    document.body.appendChild(overlay);
+
+  overlay.addEventListener("click", () => overlay.remove());
+}
