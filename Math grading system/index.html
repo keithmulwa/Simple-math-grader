@@ -6,30 +6,30 @@
     <title>MathGrader</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
-    <div class="bg-white p-6 rounded-lg shadow-md w-80">
+<body class="bg-green-100 flex items-center justify-center min-h-screen">
+    <div class="group bg-white p-6 rounded-lg shadow-md w-80">
         <h1 class="text-2xl font-bold text-blue-600 mb-4 text-center">MathGrader</h1>
         <p class="text-gray-600 mb-4 text-center">This is a simple Math grader</p>
 
         
         <form id="gradeForm" class="flex flex-col space-y-4">
-            <label for="mks" class="font-medium text-gray-700">Enter your marks:</label>
+            <label for="mks" class="font-small text-green-700">Enter your marks:</label>
             <input 
                 type="number" 
                 id="mks" 
-                class="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                class="group-hover:text-xl border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" 
                 placeholder="e.g. 75"
                 required
             >
 
             <button 
                 type="submit" 
-                class="bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition duration-200"
+                class="bg-blue-600 text-white py-2 rounded-md hover:bg-green-700 transition duration-200 transform motion-safe:hover:scale-105"
             >
                 Submit
             </button>
         </form>
-        <div id="result" class="mt-4 text-center text-lg font-semibold text-gray-700"></div>
+        <div id="result" class="sm:motion-safe:hover:animate-spin mt-4 text-center text-lg font-semibold text-green-700"></div>
     </div>
 
 
